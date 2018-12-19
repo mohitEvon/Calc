@@ -37,7 +37,7 @@ public class Calc extends CordovaPlugin {
     }
 
     private void add(JSONArray args, CallbackContext callback) {
-        if (args = null) {
+        if (args != null) {
 
             try {
                 int p1 = Integer.parseInt(args.getJSONObject(0).getString("param1"));
@@ -55,7 +55,7 @@ public class Calc extends CordovaPlugin {
 
 
     private void remove(JSONArray args, CallbackContext callback) {
-        if (args = null) {
+        if (args != null) {
 
             try {
                 int p1 = Integer.parseInt(args.getJSONObject(0).getString("param1"));
